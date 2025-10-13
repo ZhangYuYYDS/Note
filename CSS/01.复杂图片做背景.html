@@ -1,0 +1,72 @@
+<!-- 复杂图片做背景，保证部分区域不被拉伸 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="frame-container">
+      <div class="content">
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">123</div>
+        <div class="title">456</div>
+        <div class="title">456</div>
+        <div class="title">456</div>
+        <div class="title">456</div>
+        <div class="title">456</div>
+        <div class="title">456</div>
+        <div class="title">456</div>
+        <div class="title">456</div>
+        <div class="title">456</div>
+        <div class="title">456</div>
+        <div class="title">456</div>
+        <div class="title">456</div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .frame-container {
+    width: 750px;
+    min-height: 1005px;
+    border-image-source: url("./homebg.png");
+    border-width: 100px 0 100px 0;
+    border-style: solid;
+    border-color: transparent;
+    border-image-slice: 200 0 200 0 fill;
+    border-image-repeat: stretch;
+    transition: 1s;
+    box-sizing: border-box;
+    padding: 300px;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+  }
+</style>
