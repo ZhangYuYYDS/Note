@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "description": "必须加上type: module才能使用import语法",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
